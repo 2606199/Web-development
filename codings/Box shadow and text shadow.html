@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px ;
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        background-color: royalblue;
+        /* box shadow: offset x offset y */
+        /* box shadow: offset x offset y blur-radius*/
+        /* box shadow: offset x offset y blur-radius spread radius color*/
+        /* box-shadow: 13px 13px rgb(90, 205, 138); */
+
+        /* box-shadow: -13px -13px rgb(90, 205, 138); */
+        /* box-shadow: 13px 13px 5px rgb(90, 205, 138); */
+        /* box-shadow: 13px 13px 5px 34px rgba(90, 205, 138,0.5); */
+        /* it increase the shadow inside the box */
+        /* box-shadow: inset 3px 5px green; */
+        box-shadow: 5px 7px green, 5px 6px red;
+    }
+    .card h2{
+        /* text-shadow: 3px 4px red; */
+        text-shadow: 3px 4px 4px red;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is c++</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima officiis facilis, blanditiis quia repudiandae, quas fugiat at, pariatur vero molestias libero mollitia a enim esse eos alias rem ratione maiores itaque! Officia, explicabo reiciendis.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is html course</h2>
+            <p>I have started c++ course this does not means that we are gonna stop it.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, eveniet nam amet quos provident ullam in? Vitae quibusdam sapiente quis quisquam, laboriosam ab modi iste quo et eligendi tenetur repellendus, facere est culpa fugit!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi, quod error illum officia sed. Quis aliquid veniam vero libero blanditiis nesciunt possimus, ratione numquam provident nam magni aspernatur quas totam delectus tempore in!</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quis ipsam tenetur? Illum, molestiae eligendi. Quas molestias, aliquam dolores aliquid nesciunt corrupti suscipit iusto est sapiente, unde ipsum, accusamus totam incidunt optio illo! Accusantium.</p>
+        </div>
+    </div>
+</body>
+</html>

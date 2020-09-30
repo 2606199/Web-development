@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css tutorial</title>
+   <!-- p{ color: blue} syntax of css where p is selector it can be any tag ,here all paragraph will get color blue-->
+   <style>
+    /* internal css */
+        p{
+            color: rosybrown;
+            /* important word gives it more precedence and no one can overwrite it */
+            background-color: royalblue !important;
+        }
+    /* among internal and external precedence takes place by those which are written on later unless and until u make it important*/
+    </style>
+    <!-- external css -->
+     <link rel="stylesheet" href="css tutorial.css">
+</head>
+<body>
+    <!-- inline has more precedence -->
+    <h3>this is css tutorial</h3>
+    <!-- <p style="color: red; background-color: seagreen;">this tutorial will teaches us everything we need to know</p> -->
+    <p>this tutorial will teaches us everything we need to know</p>
+</body>
+</html>

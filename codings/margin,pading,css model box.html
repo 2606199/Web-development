@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+         /* *means it will apply to all */
+        *{
+            /* it is used to make width same even we change padding or margin */
+            box-sizing: border-box;
+            /* these are the default value */
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(149, 168, 253);
+        }
+        .container{
+            background-color: rgb(67, 112, 236);
+            border: 3px solid rgb(241, 78, 78);
+            /* we can set up margin and padding for top,bottom,left and right */
+
+            /* padding-top: 79px;
+            padding-left: 34px;
+            padding-right: 79px;
+            padding-bottom: 79px;
+            margin-top: 3px;
+            margin-left: 34px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+             */
+             
+            /* margin= top right bottom left; */
+            /* padding= top right bottom left; */
+
+            /* padding: 23px 56px 6px 78px;
+                margin: 23px 56px 6px 78px; */
+
+               /* padding: y(top/bottom) x(left/right) */
+               /* margin: y(top/bottom) x(left/right) */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 15px;
+            width: 520px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex, veniam optio corrupti iure dolore autem magnam ut voluptatem repellat eligendi. Delectus nobis similique culpa explicabo, tempora quia consectetur, officia ratione odio molestias cum cupiditate corrupti laborum! Quae, architecto quibusdam?</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex, veniam optio corrupti iure dolore autem magnam ut voluptatem repellat eligendi. Delectus nobis similique culpa explicabo, tempora quia consectetur, officia ratione odio molestias cum cupiditate corrupti laborum! Quae, architecto quibusdam?</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ex, veniam optio corrupti iure dolore autem magnam ut voluptatem repellat eligendi. Delectus nobis similique culpa explicabo, tempora quia consectetur, officia ratione odio molestias cum cupiditate corrupti laborum! Quae, architecto quibusdam?</p>
+    </div>
+</body>
+</html>

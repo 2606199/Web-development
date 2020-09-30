@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable and custom properties</title>
+    <style>
+        :root {
+            /* Global varibles----> scope is outside the block and inside the block */
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 333px;
+        }
+
+        .box {
+            /* local variable ---->scope is inside the block  */
+            /* --box-color: violet; */
+
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            box-shadow: 3px 3px var(--box-color);
+            margin: 2px 9px;
+        }
+
+        .container {
+                        /* local variable ---->scope is inside the block  */
+
+            /* --box-color: violet; */
+            /* it changes the width of container due to which it remains at top left */
+            max-width: var(--maxw);
+            /* using margin auto ,it sets contianer at center by giving particular margin */
+            margin: auto;
+            
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
